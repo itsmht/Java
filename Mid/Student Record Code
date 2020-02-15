@@ -1,0 +1,46 @@
+class Student{
+private String name;
+    private int id;
+    private String faculty;
+    private double cgpa;
+void setName(String name)
+{
+this.name=name;
+}
+void setID(int id){
+this.id=id;
+}
+void setFac(String faculty){
+this.faculty=faculty;
+}
+void setCGPA(double cgpa){
+this.cgpa=cgpa;
+}
+public Student(String name, int id, String faculty, double cgpa){
+setName(name);
+setID(id);
+setFac(faculty);
+setCGPA(cgpa);
+
+}
+String getName(){return name;}
+int getID(){return id;}
+String getFac(){return faculty;}
+double getCGPA(){return cgpa;}
+}
+
+class CicadaST{
+public static void main(String args[]){
+Student obj1= new Student("Mehedi Hasan Talha",39597,"FST",3.52);
+System.out.println("Name: " + obj1.getName());
+System.out.println("ID: " + obj1.getID());
+System.out.println("Faculty: " + obj1.getFac());
+System.out.println("CGPA: " + obj1.getCGPA());
+Student obj2=new Student("Shahed Shourav",39595,"FST",3.50);
+System.out.println("Name: " + obj2.getName());
+System.out.println("ID: " + obj2.getID());
+System.out.println("Faculty: " + obj2.getFac());
+System.out.println("CGPA: " + obj2.getCGPA());
+
+}
+}
