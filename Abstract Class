@@ -1,0 +1,49 @@
+abstract class Myabs{
+    int hour=5;  
+    abstract void calculate_salary();
+}
+
+class Finance extends Myabs{
+
+void calculate_salary(){
+        System.out.println("Finance Salary: "+hour*20);
+}
+}
+class IT extends Myabs{
+
+
+void calculate_salary(){
+System.out.println("IT Salary:" +hour*14);
+
+}
+}
+class HR extends Myabs{
+
+void calculate_salary(){
+System.out.println("HR Salary:" +hour*20);}
+}
+class Operation extends Myabs{
+
+void calculate_salary(){
+System.out.println("Operation Salary:" +hour*20);
+}
+}
+class Sales extends Myabs{
+
+void calculate_salary(){
+System.out.println("Sales Salary:" +hour*20);
+}
+}
+class Cicada2{
+public static void main(String[]args){
+Myabs c;
+   c = new Finance();
+c.calculate_salary();
+c= new IT();
+c.calculate_salary();
+c = new HR();
+c.calculate_salary();
+c = new Operation();
+c.calculate_salary();
+c = new Sales();
+c.calculate_salary();
